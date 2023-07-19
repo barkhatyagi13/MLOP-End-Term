@@ -58,9 +58,10 @@ def get_user_input():
     return features
 
 # Set the title of the app
+st.markdown('<style>h1{ text-align: center; }</style>', unsafe_allow_html=True)
 st.title('Diamond Price Prediction App')
 st.image("""https://www.thestreet.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTY4NjUwNDYyNTYzNDExNTkx/why-dominion-diamonds-second-trip-to-the-block-may-be-different.png""")
-st.header('Enter the characteristics of the diamond:')
+st.header('Choose characteristics of the diamond:')
 
 # Get user input
 user_input = get_user_input()
